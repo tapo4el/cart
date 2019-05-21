@@ -16,4 +16,4 @@ export interface ChangeAmountAction {
 export interface AmountPayload {
     id: string;
     amount: string;
-};
+}

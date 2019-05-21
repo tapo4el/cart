@@ -24,9 +24,21 @@ class Cart extends React.PureComponent<CartProps, null> {
                     <div className="price">{`Price: ${price} $`}</div>
                     <div className="amount">
                         Amount:
-                        <button type="button" onClick={() => changeAmount({ id, amount: '1' })}>+</button>
+                        <button
+                            type="button"
+                            data-test-id="increaseAmount"
+                            onClick={() => changeAmount({ id, amount: '1' })}
+                        >
+                            +
+                        </button>
                         <i>{amount}</i>
-                        <button type="button" onClick={() => changeAmount({ id, amount: '-1' })}>-</button>
+                        <button
+                            type="button"
+                            data-test-id="decreaseAmount"
+                            onClick={() => changeAmount({ id, amount: '-1' })}
+                        >
+                            -
+                        </button>
                     </div>
                     <div className="footer">
                         <button
@@ -53,6 +65,7 @@ class Cart extends React.PureComponent<CartProps, null> {
                 <div className="footer">
                     <button
                         type="button"
+                        data-test-id="clearCart"
                         className="removeButton"
                         onClick={clearCart}
                     >

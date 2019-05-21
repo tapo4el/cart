@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart should be rendered correctly 1`] = `
+<div
+  className="cart"
+>
+  <div
+    className="header"
+  >
+    Cart
+  </div>
+  <div
+    className="totalPrice"
+  >
+    Total price: 600 $
+  </div>
+  <div
+    className="item"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Doublecross"
+        src="https://cdn.bike-discount.de/media/org/orgb_C/orgid_26/thumbs/328964_2936140.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        Doublecross
+      </div>
+      <div
+        className="description"
+      >
+        Description: Soma Doublecross frameset carbon fork like new
+      </div>
+      <div
+        className="company"
+      >
+        Company: Soma
+      </div>
+      <div
+        className="price"
+      >
+        Price: 100 $
+      </div>
+      <div
+        className="amount"
+      >
+        Amount:
+        <button
+          data-test-id="increaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+        <i>
+          1
+        </i>
+        <button
+          data-test-id="decreaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="footer"
+      >
+        <button
+          className="removeButton"
+          onClick={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="item"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="Smoothie"
+        src="https://cdn.bike-discount.de/media/org/orgb_R/orgid_33/thumbs/450554_3853977.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        Smoothie
+      </div>
+      <div
+        className="description"
+      >
+        Description: 2012 Soma Smoothie Frameset, 52 cm
+      </div>
+      <div
+        className="company"
+      >
+        Company: Soma
+      </div>
+      <div
+        className="price"
+      >
+        Price: 200 $
+      </div>
+      <div
+        className="amount"
+      >
+        Amount:
+        <button
+          data-test-id="increaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+        <i>
+          1
+        </i>
+        <button
+          data-test-id="decreaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="footer"
+      >
+        <button
+          className="removeButton"
+          onClick={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="item"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="DELANCEY"
+        src="https://cdn.bike-discount.de/media/org/orgb_R/orgid_33/thumbs/486175_4045883.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="header"
+      >
+        DELANCEY
+      </div>
+      <div
+        className="description"
+      >
+        Description: SOMA DELANCEY Green Fixie Frame and Fork NEW 54cm x 54cm SoundCycles Los Angeles
+      </div>
+      <div
+        className="company"
+      >
+        Company: Soma
+      </div>
+      <div
+        className="price"
+      >
+        Price: 300 $
+      </div>
+      <div
+        className="amount"
+      >
+        Amount:
+        <button
+          data-test-id="increaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+        <i>
+          1
+        </i>
+        <button
+          data-test-id="decreaseAmount"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="footer"
+      >
+        <button
+          className="removeButton"
+          onClick={[Function]}
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer"
+  >
+    <button
+      className="removeButton"
+      data-test-id="clearCart"
+      onClick={[Function]}
+      type="button"
+    >
+      Clear Cart
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Cart should clear cart 1`] = `
+Array [
+  Object {
+    "type": "CLEAR_CART",
+  },
+]
+`;
+
+exports[`Cart should decrease amount of the item 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": "-1",
+      "id": "1",
+    },
+    "type": "CHANGE_AMOUNT",
+  },
+]
+`;
+
+exports[`Cart should increase amount of the item 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "amount": "1",
+      "id": "1",
+    },
+    "type": "CHANGE_AMOUNT",
+  },
+]
+`;
+
+exports[`Cart should remove item 1`] = `
+Array [
+  Object {
+    "payload": "1",
+    "type": "REMOVE_ITEM",
+  },
+]
+`;
