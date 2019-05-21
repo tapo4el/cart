@@ -1,0 +1,85 @@
+@import "../../vars.less";
+
+.cart {
+  max-width: 960px;
+  margin: 20px auto;
+  font-family: @default-font-family;
+  font-size: @default-font-size;
+  border: @default-border;
+  padding: @default-padding*2;
+  border-radius: 10px;
+
+  &>.header {
+    font-size: @default-font-size*2;
+    padding-bottom: @default-padding*2;
+  }
+
+  &>.footer {
+    border-top: @default-border;
+    padding-top: @default-padding*2;
+    text-align: right;
+  }
+
+  .totalPrice {
+    font-size: @default-header-size;
+    padding: @default-padding 0;
+    text-align: right;
+  }
+}
+
+.item {
+  display: flex;
+  padding: @default-padding;
+  border-top: @default-border;
+
+  .image {
+    flex: 0 0 auto;
+  }
+  .content {
+    flex: 1 1 auto;
+    padding: @default-padding;
+
+    &>div {
+      padding-bottom: 5px;
+    }
+
+    &>.header {
+      font-size: @default-header-size;
+    }
+
+    &>.footer {
+      text-align: right;
+    }
+
+    .amount {
+      button:first-child {
+        margin-left: 10px;
+      }
+      button {
+        display: inline-block;
+        border: @default-border;
+        width: 24px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+      }
+      i {
+        display: inline-block;
+        padding: 0 8px;
+      }
+    }
+  }
+}
+
+.removeButton {
+  background: #db2828;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
