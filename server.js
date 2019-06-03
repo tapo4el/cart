@@ -12,6 +12,6 @@ server.get('/data', (req, res) => {
 });
 server.set('port', process.env.PORT || 3000);
 
-server.listen(server.get('port'), function() {
-    console.log('listening on port ');
+server.listen(server.get('port'), () => {
+    console.log(`Listening on port ${server.get('port')}`);
 });
